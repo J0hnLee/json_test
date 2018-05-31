@@ -51,5 +51,5 @@ event ={
 }
 
 json_str = json.dumps(event)
-data=json.loads(json_str,object_hook=JSONObject)
-print(data.string)
+data=json.loads(json_str)
+print(data['object']['e'])
